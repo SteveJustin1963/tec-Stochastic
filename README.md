@@ -1,2 +1,2 @@
-# tec-Stochastic-CPU
-TEC-1 Stochastic-CPU
+# tec-STOCHASTIC
+TEC-1 using a Stochastic-CPU
