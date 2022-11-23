@@ -3,6 +3,7 @@ TEC-1 using a Stochastic-CPU
 
 
 
+## differentiation of stochastic process
 
 https://math.stackexchange.com/questions/612848/meaning-of-differentiation-of-stochastic-process
 
@@ -22,5 +23,6 @@ The Ito integral is defined by approximating the function f by elementary functi
 c code diff_1.c
 forth 83 code diff_1.f83
 
+## integration of stochastic process
 
 
