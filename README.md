@@ -59,16 +59,28 @@ Martingalo
  
 ## summarise
 
- 
+
 
 integrability of stochastic process:
 
 1) If x(t) is Brownian motion, ∫bax(t)dt is defined.
-
 2) If x(t) is a simple process (a function of an exponential waiting time), ∫bax(t)dt is defined.
-
 3) If x(t) is a more complicated process, the question of when ∫bax(t)dt is defined depends on the properties of its sample paths and what is interesting to see is if the set A⊂Ω for which x(t,ω), ω∈A is integrable, P(A)=1 or not. 
 
 c code for the above 3 steps
 integ_1.c
- 
+
+## another
+The stochastic process x(t) must be continuous in t.
+Suppose r is a point in the interval [a, b]. If we take a continuous function f(t) = t, then we would have that
+∫baf(t)dt = (b - a)
+But what is the expected value of this expression?
+E((b - a)) = E(b) - E(a) = b - a
+But what is the expected value of the random process x(t) evaluated at t = a? It is just E(x(a)).
+So the expected value of the integral is
+E∫bax(t)dt = E(x(a)(b - a)) = (b - a)E(x(a))
+But if x(t) is not continuous at t = a, then we cannot say that E(x(a)) = x(a).
+So the integrability of the process x(t) on [a, b] requires that x(t) be continuous on [a, b].
+I think this is the reason why the Brownian motion is integrable.
+
+c code program for the above integ_2.c
