@@ -8,21 +8,21 @@ The circuit that uses two 555 timers, one as a "one-shot" monostable multivibrat
 
 ## generic stochastic circuit parts
 - SS stochastic stream, when data is mixed with RN
-- IP input, can be from world converted via ADC or from tec1 port
+- IP input, can be from world converted via ADC or from tec1 out port
 - ADC, DAC, analog to digital converter, digitial to analog converte
 - RN, the source of stochastic input from a random noise generator ( eg Johnson-Nyquist noise generator)
-- DG Digital Logic gates and other digital components such as FF flip-flop, C counters etc 
-- R registers io port of tec1 to perform the desired interpretation / calculation
+- DLG Digital digital logic gates and other  components such as FF flip-flop, C counters etc 
+- R registers or input port of tec1 to perform the desired interpretation / calculation
 - MUX digital multiplexer to route SS traffic and send to counter or integrator + ADC to the tec1
 ```
-RN+IP--DG--|
-RN+DG------|
-RN+ADC-----|--MUX---R 
-RN+FF------|
-RN+C-------|
+RN+IP--DLG--|
+RN+DLG------|
+RN+ADC------|--MUX---R---tec1---can loop back to IP thru out port
+RN+FF-------|
+RN+C--------|
 ```
+The tec1 would be programmed to perform the desired mathematical operations on the input data and output the result. The ADC chip would convert the analog input into digital data that can be processed by the tec1, while the DAC would convert the digital output back into an analog signal. The tec1 has additional features such as 7 segment display and LCD display, MINT system, serial port and a math processor 9511.
+This is a very general circuit, and the specific components and design will depend on the requirements of the application and the specific mathematical operations that need to be performed.
 
 
-The microcontroller would be programmed to perform the desired mathematical operations on the input data and output the result. The ADC chip would convert the analog input into digital data that can be processed by the microcontroller, while the DAC would convert the digital output back into an analog signal. The circuit could also be designed to include additional features such as display, memory, or communication interfaces.
-It's important to note that this is a very general circuit, and the specific components and design will depend on the requirements of the application and the specific mathematical operations that need to be performed.
 
