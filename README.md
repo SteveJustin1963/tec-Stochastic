@@ -10,7 +10,7 @@ The circuit that uses two 555 timers, one as a "one-shot" monostable multivibrat
 could perform simple calculations and has an ADC (Analog-to-Digital Converter) chip could be constructed using the following components:
 - A random noise generator, such as a Johnson-Nyquist noise generator, to provide a source of stochastic input.
 - An ADC chip to convert the analog input from the noise generator into digital data that can be processed by the circuit.
-- A microcontroller, such as an Arduino or a Raspberry Pi, to perform the calculations and control the overall operation of the circuit.
+- A SBC such as the TEC1, to perform the calculations and control the overall operation of the circuit.
 - A digital multiplexer (MUX) to route the input from the noise generator to the ADC and to the microcontroller.
 - A digital-to-analog converter (DAC) to convert the digital output of the microcontroller back into an analog signal.
 - Digital Logic gates and other digital components such as flip-flop, counters and registers to perform the desired calculations.
