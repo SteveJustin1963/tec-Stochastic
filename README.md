@@ -26,7 +26,7 @@ This is a very general circuit, and the specific components and design will depe
 
 ## hey chatgpt how can i improve this?
 
-## To enhance this machine and code, I would focus on improving accuracy, functionality, and versatility. Here's a comprehensive approach:
+To enhance this machine and code, I would focus on improving accuracy, functionality, and versatility. Here's a comprehensive approach:
 
 ### Hardware Improvements
 
