@@ -32,34 +32,4 @@ double stratonovich_integral(double t, double w, double (*f)(double, double)) {
      }
      return I;
 }
-
-convert to forth 83 code
-
-
-
-: ito-integral ( t w f -- I )
-     0. 0e
-:+!
-     n 2@ 1-
-     >r
-:ito-integral-loop
-     r> tj w f @ ej !
-     tj tj 1+ 2@ chi * phi !
-     phi +!
-     1+
-     n 2@ 1-
-     >r
-;
-
-: stratonovich-integral ( t w f -- I )
-     0. 0e
-:+!
-     n 2@ 1-
-     >r
-:stratonovich-integral-loop
-     r> tj tj 1+ 2@ + tj 1+ 2@ chi * phi !
-     phi +!
-     1+
-     n 2@ 1-
-     >r
-;
+ 
