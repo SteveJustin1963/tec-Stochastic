@@ -26,8 +26,9 @@ This is a very general circuit, and the specific components and design will depe
 
 
 
- ### 
- The program you provided appears to aim at calculating a numerical integration using the trapezoidal rule. Here's a breakdown and analysis of the code:
+### numerical integration using the trapezoidal rule - see program
+ The program you aims at calculating a numerical integration using the trapezoidal rule. 
+ breakdown and analysis of the code:
 
 ### Key Points:
 1. **Variables:**
