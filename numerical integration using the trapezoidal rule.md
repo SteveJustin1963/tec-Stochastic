@@ -1,4 +1,4 @@
-
+```
 : main
 VARIABLE n
 VARIABLE i
@@ -42,4 +42,4 @@ inte = h*(y[0]+y[n]+2*s)/2
 CR
 CR ." value of integral is " inte f@ .
 CR CR
-
+```
