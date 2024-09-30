@@ -68,7 +68,7 @@ Here’s the structure of the code in **Mint**, adapted for numerical integratio
     a x 0 + !                              // Set x[0] to 'a'
 
     // Initialize y[0] = 1 / (1 + x[0]^2)
-    x 0 ? dup * 1 + 1 / y 0 + !            // Compute y[0]
+    x 0 ? " * 1 + 1 / y 0 + !            // Compute y[0]
 
     // Print headers
     `x y` /N
@@ -79,7 +79,7 @@ Here’s the structure of the code in **Mint**, adapted for numerical integratio
     /U (
         i n < /W                           // Loop until i >= n
         i 1 - x 0 + ? h + x i !            // Calculate x[i]
-        x i ? dup * 1 + 1 / y i !          // Calculate y[i]
+        x i ? " * 1 + 1 / y i !          // Calculate y[i]
         i 1 + i !                          // Increment i
     )
 
