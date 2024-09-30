@@ -50,7 +50,10 @@ This is a very general circuit, and the specific components and design will depe
 6. **Summation and Final Calculation:**
    - `s` accumulates the sum of `y` values excluding the endpoints.
    - The final result of the integral (`inte`) is calculated using the trapezoidal formula:  
-     \[
+
+![image](https://github.com/user-attachments/assets/7e3dc580-8f6e-420c-997e-698afa180085)
+
+ \[
      \text{integral} = \frac{h}{2} \times \left( y[0] + y[n] + 2 \times s \right)
      \]
    - This value is then displayed.
