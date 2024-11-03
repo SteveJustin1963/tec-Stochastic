@@ -1,4 +1,9 @@
 ### Exploration into stochastic computing 
+- encoding numbers
+  - raw number streams, 5 = 1,1,1,1,1 and 98 = 1,1..........1 (98 of them)
+  - probabilities, eg 1/5 = 1 mixed with 4x 0's, ie 1,0,0,0,0 or 0,0,1,0,0, we can make the streams larger so long as the ratios is the same
+  - analog, convert 16bit integers to a smooth analog voltage from 0-10 Volts
+  -   
 - use the gates as an encoder/decoder
 - integers are converted to stochastic fixed point number as a ratio between 0.0000 to 1.00000
 - if conversion is based on say 100 bit streams, then 5 would be 5 bits of 1 randomley mixed 95 zeros
