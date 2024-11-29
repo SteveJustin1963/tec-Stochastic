@@ -1,5 +1,8 @@
 # TEC-1 Stochastic Computing Implementation Guide
 
+![image](https://github.com/user-attachments/assets/c206c210-80f1-4f27-86a0-97928d9bc818)
+
+
 ## 1. Number Representation
 
 ### Basic Stream Encoding
